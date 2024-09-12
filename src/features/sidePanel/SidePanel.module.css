@@ -1,0 +1,289 @@
+.toggle {
+    width: 5em;
+    position: absolute;
+    left: -4.4em;
+    transform: rotate(90deg);
+    text-align: center;
+    z-index: 100;
+    padding: 0.5em;
+    border: 2px solid white;
+    background-color: #323232;
+    cursor: pointer;
+    border-radius: 0 0 5px 5px;
+    opacity: 0.5;
+}
+
+.toggle0 {
+    top: 3em;
+}
+
+.toggle1 {
+    top: 9.1em;   
+}
+
+.toggleActive {
+    border-top: 3px solid #323232;
+    z-index: 10;
+    opacity: 1;
+}
+
+.sidePanel {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    background-color: #323232;
+    /* border-left: 2px solid white; */
+    min-height: 100vh;
+}
+
+@media (max-width: 786px) {
+    .sidePanel {
+        display: none;
+    }
+}
+
+.sidePanel__content {
+    background-color: #323232;
+    position: absolute;
+    top: 0;
+    min-width: 20em;
+    padding: 2em;
+    min-height: calc(100% - 4em);
+    border-left: 2px solid white;
+}
+
+.contentActive {
+    /* overflow-y: scroll; */
+    z-index: 200;
+}
+
+.sidePanelOpen {
+    position: absolute;
+    right: 0;
+    width: 24em;
+    transition: 0.5s all ease-out;
+}
+
+.sidePanelClosed {
+    width: 0;
+}
+
+.sidePanelMobile {
+    @media (max-width: 1200px) {
+        position: absolute;
+        right: 0;
+        max-width: calc(100vw - 34px);
+    }
+}
+
+.buttons {
+    width: 100%;
+    margin-bottom: 0.75em;
+    display: flex;
+}
+
+.measureContainer {
+    position: relative;
+}
+
+.checkboxLabel {
+    font-size: 0.75em;
+    position: absolute;
+    top: -0.6em;
+    right: 0;
+}
+
+.checkbox {
+    -webkit-appearance:none;
+    -webkit-transition: .10s;
+    height:1.25em;
+    width:1.25em;
+    cursor:pointer;
+    position:relative;
+    border-radius:5px;
+    background-color:transparent;
+    border: 2px solid white;
+    position: relative;
+    top: 0.5em;
+}
+.checkbox:checked {
+    background-color:white;
+}
+.checkbox:before, .checkbox:checked:before {
+    position:absolute;
+    top:-0.2em;
+    left:0;
+    width:100%;
+    height:100%;
+    line-height:1.5em;
+    text-align:center;
+    color: #323232;
+}
+.checkbox:checked:before {
+    content: 'X';
+}
+
+
+.toggle2 {
+    top: 15.2em; /* Adjust based on layout */
+}
+
+
+.gatesGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    margin-top: 1em;
+    padding: 1em;
+    background-color: #1e1e1e; /* Dark background for contrast */
+    border-radius: 8px; /* Rounded edges for a smooth modern feel */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); /* Subtle shadow for depth */
+}
+
+.gatesGrid button {
+    background: linear-gradient(145deg, #444444, #5a5a5a); /* Gradient for gate buttons */
+    border: none;
+    color: #f1f1f1; /* Softer white text */
+    font-size: 1.1rem; /* Slightly larger for better readability */
+    padding: 0.75em 1em;
+    border-radius: 6px;
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+}
+
+.gatesGrid button:hover {
+    background: linear-gradient(145deg, #5a5a5a, #444444); /* Slight inversion on hover */
+    transform: translateY(-2px); /* Subtle lift effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Slightly larger shadow on hover */
+}
+
+.gatesGrid button:active {
+    background: #ff4c4c; /* Highlight the button when it's active */
+    transform: translateY(0); /* Return to normal state */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Reset shadow when pressed */
+}
+
+.gatesGrid button:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(255, 76, 76, 0.5); /* Custom focus ring with red glow */
+}
+
+
+.selectedGatesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+    padding: 0.5em;
+    background-color: #1c1c1c;  /* Dark background for contrast */
+    border-radius: 8px; /* Soft, rounded edges for modern feel */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); /* Subtle shadow for depth */
+}
+
+.selectedGateBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 15em;
+    height: 3em;
+    background: linear-gradient(145deg, #3a3a3a, #505050); /* Gradient for premium look */
+    color: #f1f1f1;  /* Softer white for text */
+    border: 1px solid #f1f1f1; /* Subtle white border */
+    border-radius: 6px; /* Slight rounding for a modern feel */
+    margin: 0.5em 0;
+    padding: 0.75em;
+    transition: all 0.3s ease;  /* Smooth transitions */
+}
+
+.selectedGateBox:hover {
+    background: linear-gradient(145deg, #505050, #3a3a3a); /* Hover effect to add interactivity */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3); /* Slightly deeper shadow on hover */
+}
+
+.deleteButton {
+    background: none;
+    border: none;
+    color: #f1f1f1;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.deleteButton:hover {
+    color: #ff4c4c;  /* Red highlight on hover for the delete button */
+}
+
+.scrollableContainer {
+    max-height: 400px; /* Adjust this height based on your needs */
+    overflow-y: auto;
+    width: 100%;
+    padding-right: 10px;  /* Padding to avoid scrollbar overlap */
+    scrollbar-width: thin;  /* Make the scrollbar smaller */
+    scrollbar-color: #5a5a5a #1c1c1c;  /* Custom scrollbar color */
+}
+
+.scrollableContainer::-webkit-scrollbar {
+    width: 8px; /* Thin scrollbar */
+}
+
+.scrollableContainer::-webkit-scrollbar-thumb {
+    background-color: #5a5a5a;  /* Darker scrollbar thumb */
+    border-radius: 10px; /* Rounded scrollbar for a smooth look */
+}
+
+.sliderContainer {
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+}
+
+.sliderContainer input[type="range"] {
+    width: 100px;
+    margin-right: 0.5em;
+    -webkit-appearance: none; /* Removes default appearance for a custom look */
+    height: 6px; /* Slightly thicker slider */
+    background: #505050;  /* Dark gray slider background */
+    border-radius: 10px; /* Rounded slider edges */
+    outline: none; /* Removes the default focus border */
+    transition: background 0.3s ease;
+}
+
+.sliderContainer input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;  /* Circle slider thumb */
+    background: #ffffff;  /* White thumb for contrast */
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Slight shadow for depth */
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.sliderContainer input[type="range"]::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.sliderContainer input[type="range"]::-webkit-slider-thumb:hover {
+    background: #f1f1f1; /* Lighter white on hover */
+    transform: scale(1.1); /* Scale effect on hover for emphasis */
+}
+
+.sliderContainer input[type="range"]::-moz-range-thumb:hover {
+    background: #f1f1f1;
+    transform: scale(1.1);
+}
+
+.sliderContainer input[type="range"]:active::-webkit-slider-thumb {
+    background: #ff4c4c; /* Red thumb when dragging */
+}
+
+.sliderContainer input[type="range"]:active::-moz-range-thumb {
+    background: #ff4c4c;
+}

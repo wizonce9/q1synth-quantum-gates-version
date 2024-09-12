@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    position: relative;
+    margin: 0 auto;
+    user-select: none;
+}
+
+.label {
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.label0 { top: 0 }
+.label1 { bottom: 0 }
+
+.labelplus, .labeli { top: 60% }
+.labelminus, .labelminusi { bottom: 57.5%; transform: scale(0.75) }
+
+.labelminus { right: 1em }
+.labelminusi { left: 0.5em }
+
+.labelplus { left: -1em }
+.labeli { right: -1em }

@@ -1,0 +1,9 @@
+.input {
+    width: calc(100% - 2.35em);
+    padding: 1em;
+    font-weight: 900;
+    font-family: 'Source Code Pro', monospace;
+}
+.input:focus {
+    outline: black;
+}

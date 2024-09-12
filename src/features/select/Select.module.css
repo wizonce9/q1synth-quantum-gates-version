@@ -1,0 +1,13 @@
+.container {
+    margin-bottom: 0.75em;
+}
+
+.select {
+    width: 100%;
+    padding: 1em;
+    font-weight: 900;
+    font-family: 'Source Code Pro', monospace;
+}
+.select:focus {
+    outline: black;
+}

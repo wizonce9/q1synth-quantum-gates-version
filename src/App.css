@@ -1,0 +1,153 @@
+/* delete me */
+html {
+    background-color: #323232;
+    color: #FFF;
+    
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#root {
+    width: 100%;
+}
+
+.App {
+    max-width: 1800px;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+    min-height: 100vh;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.main {
+    flex-basis: 100%;
+    padding: 2em 4em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .main {
+        padding: 2em;
+    }
+}
+
+.info {
+    padding-bottom: 3em;
+}
+
+@media (max-width: 600px) {
+    .info {
+        padding-bottom: 4em;
+    }
+}
+
+.btn-mode {
+    cursor: pointer;
+    opacity: 0.5;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1em;
+    font-family: inherit;
+    padding: 0;
+}
+
+.btn-mode--active {
+    opacity: 1;
+}
+
+@media (max-width: 600px) {
+    .modes { display: none }
+}
+
+.btn-randomise {
+    position: absolute;
+    margin-top: 2em;
+    width: 10em;
+}
+
+.btn-randomise button {
+    margin-bottom: 0em;
+}
+
+@media (max-width: 600px) {
+    .btn-randomise {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.fullscreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+h2, p {
+    font-size: 1em;
+    margin-top: 0;
+}
+
+.appInstructions {
+    font-size: 0.75em;
+}
+
+#knob circle {
+    fill: black;
+}
+
+#knob path {
+    fill: #FFF;
+}
+
+svg linearGradient {
+    fill: #FFF!important;
+}
+
+.rc-slider {
+    padding: 0.75em 0;
+}
+
+.rc-slider-disabled {
+    background-color: transparent;
+    opacity: 0.5;
+}
+.rc-slider-rail {
+    background-color: #FFF;
+}
+
+.rc-slider-handle {
+    border-color: #FFF;
+    background-color: black;
+}
+
+.rc-slider-track {
+    background-color: black;
+}
+
+.download {
+    padding: 1em 0 0 0;
+}
+
+@media (max-width: 600px) {
+    .sliders {
+        display: none;
+    }
+}
