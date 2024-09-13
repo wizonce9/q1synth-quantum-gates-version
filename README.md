@@ -1,9 +1,5 @@
 # Q1Synth—Add Quantum Gates
 
-A built version of this app is hosted at [https://iccmr-q1synth-proto.cephasteom.co.uk/](https://iccmr-q1synth-proto.cephasteom.co.uk/).
-
-Rotate the qubit to interpolate between different synthesis parameters on each axis. Measure the qubit for it to collapse to either 1 or 0. At the time of writing, this app is hosted [here](https://qusynth.cephasteom.co.uk/).
-
 ## New Features
 In addition to the original functionality, this version of Q1Synth introduces quantum gate operations. Quantum gates manipulate the state of qubits in various ways, allowing for more complex quantum computations and experiments. This extension provides users with additional controls and parameters to apply different quantum gates and observe their effects on qubit states.
 
@@ -83,6 +79,10 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Authors
+* Xinjian Ji at Peking University
+* Weijia Yang at Kyounggi University of South Korea
 
 ## Acknowledgements
 
