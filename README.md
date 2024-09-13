@@ -1,5 +1,7 @@
 # Q1Synth—Add Quantum Gates
 
+You can try it on the following website: https://q1synth-quantum-gates-version.vercel.app/
+
 ## New Features
 In addition to the original functionality, this version of Q1Synth introduces quantum gate operations. Quantum gates manipulate the state of qubits in various ways, allowing for more complex quantum computations and experiments. This extension provides users with additional controls and parameters to apply different quantum gates and observe their effects on qubit states.
 
