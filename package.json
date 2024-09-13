@@ -2,6 +2,9 @@
   "name": "iccrm-dial",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "16.x"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
