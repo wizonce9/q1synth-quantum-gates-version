@@ -151,14 +151,13 @@ export function SidePanel() {
                     onClick={() => handleHideShow(0)}
                 >信息</span>
                 <div>
-                    <h2>Q1Synth</h2>
-                    <p>Interdisciplinary Centre For Computer Music Research (ICCMR).</p>
-                    <p>Rotate and measure the qubit to quantum-design a sound.</p>
-                    <p>MouseY for angle of inclination (θ).</p>
-                    <p>MouseX for azimuth (φ)。</p>
-                    <p>shift + mouseX for sphere phase (λ)。</p>
-                    <p>f for fullscreen。</p>
-                    <p>Shift and click on presets to save current app state。</p>
+                    <h2>Q1Synth - Gates Version</h2>
+                    <p>旋转并测量量子比特，以量子设计声音。</p>
+                    <p>鼠标Y控制倾斜角度 (θ)。</p>
+                    <p>鼠标X控制方位角 (φ)。</p>
+                    <p>按住 shift 并移动鼠标X控制球体相位 (λ)。</p>
+                    <p>按 f 进入全屏模式。</p>
+                    <p>按住 shift 并点击预设按钮保存当前应用状态。</p>
                 </div>
             </div>
             {mode === 'advanced' &&
